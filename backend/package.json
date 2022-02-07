@@ -1,0 +1,24 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon index.js",
+    "client": "npm run start --prefix ../frontend",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "body-parser": "^1.19.1",
+    "currently": "^0.0.8",
+    "express": "^4.17.2",
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "concurrently": "^7.0.0"
+  }
+}
